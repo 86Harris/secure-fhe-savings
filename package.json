@@ -66,12 +66,13 @@
     "vaul": "^0.9.9",
     "viem": "^2.37.4",
     "wagmi": "^2.16.9",
+    "walletconnect": "^2.20.0",
     "zod": "^3.25.76"
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
     "@fhevm/solidity": "^0.8.0",
-    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@nomicfoundation/hardhat-toolbox": "^7.0.0",
     "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^22.16.5",
     "@types/react": "^18.3.23",
