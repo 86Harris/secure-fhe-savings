@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FHE Vault Banking Design System - Premium fintech colors and gradients */
+
+@layer base {
+  :root {
+    --background: 248 250 252;
+    --foreground: 226 232 240;
+
+    --card: 0 0% 100%;
+    --card-foreground: 226 232 240;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 226 232 240;
+
+    /* Premium blue for security/trust */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 217 91% 75%;
+
+    /* Subtle grays for banking feel */
+    --secondary: 248 250 252;
+    --secondary-foreground: 100 116 139;
+
+    --muted: 248 250 252;
+    --muted-foreground: 148 163 184;
+
+    --accent: 240 246 252;
+    --accent-foreground: 100 116 139;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 226 232 240;
+    --input: 248 250 252;
+    --ring: 217 91% 60%;
+
+    /* Vault-specific colors */
+    --vault-locked: 71 85% 57%;
+    --vault-unlocked: 142 76% 36%;
+    --vault-shadow: 226 232 240;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    /* Premium gradients */
+    --gradient-vault: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 75%));
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 46%));
+    --gradient-subtle: linear-gradient(180deg, hsl(248 250 252), hsl(241 245 249));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(248 250 252));
+
+    /* Shadows */
+    --shadow-vault: 0 10px 30px -10px hsl(217 91% 60% / 0.2);
+    --shadow-card: 0 4px 20px -4px hsl(226 232 240 / 0.4);
+    --shadow-glow: 0 0 40px hsl(217 91% 75% / 0.3);
+
+    /* Banking animation timings */
+    --transition-vault: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Rich dark background with better contrast */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 6%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 240 10% 6%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Bright blue primary for dark mode */
+    --primary: 217 91% 65%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 217 91% 80%;
+
+    /* Better contrast secondary */
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 90%;
+
+    /* Improved muted colors with better contrast */
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 84.9%;
+
+    --accent: 240 3.7% 20%;
+    --accent-foreground: 0 0% 90%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Enhanced borders and inputs */
+    --border: 240 3.7% 20%;
+    --input: 240 3.7% 15.9%;
+    --ring: 217 91% 65%;
+
+    /* Vault colors for dark mode */
+    --vault-locked: 71 85% 57%;
+    --vault-unlocked: 142 76% 46%;
+    --vault-shadow: 240 3.7% 20%;
+    --success: 142 76% 46%;
+    --success-foreground: 0 0% 98%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
